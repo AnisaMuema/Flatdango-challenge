@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color: teal;
+}
+
+.logo{
+    color: blanchedalmond;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#poster{
+    width: 30rem;
+    height: 20rem;
+}
