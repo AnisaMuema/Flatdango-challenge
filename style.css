@@ -10,11 +10,56 @@ body{
 .logo{
     color: blanchedalmond;
     text-align: center;
-    font-size: larger;
+    font-size: 250%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#poster{
-    width: 30rem;
-    height: 20rem;
+#Film-bar{
+    text-align: center;
+    
 }
+
+img{
+    height: 450px;
+    width: 700px;
+    
+}
+
+Poster1{
+    font-size: 80%;
+    color:beige
+}
+
+.wrapper .sidebar {
+    background: burlywood;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 600px;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    
+
+    
+}
+
+.wrapper .sidebar .filmMenu{
+    margin-bottom: 30px;
+    text-align: center;
+} 
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 9px 10px;
+    /* border-bottom: 1px solid burlywood; */
+    color: white;
+    font-size: 16px;
+    /* position: relative; */
+}
+
+.sidebar a.active {
+    background-color: aquamarine;
+    color: white;
+}
+
