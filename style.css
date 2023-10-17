@@ -63,3 +63,10 @@ img{
     color: white;
 }
 
+film-container{
+    text-align: center;
+    justify-content: center;
+    margin-right: 30px;
+    background-color: aliceblue;
+}
+
