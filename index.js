@@ -9,8 +9,9 @@ const capacity = document.getElementById('capacity')
 const show = document.getElementById('showtime')
 const sold = document.getElementById('available-ticket')
 const availableTickets = capacity - sold  
+const filmDisplay = document.getElementById("films")
 // Get data and render our films to the DOM
-let getFilms = (id = 1) => {
+let getFilms = (id = 3) => {
     fetch(`${url}/${id}`)
     .then((res) => res.json())
     .then((data) => {
@@ -35,20 +36,27 @@ let allFilms = () => {
 allFilms()
 
 let returnFilms = (array) =>{
-    const filmsHtml = array.map(function(character){
-        return `<span onclick ="getFilms(${character.id})">${character.title}</span>`
+    const filmHtml = array.map(function(character){
+        return `<li><a href="#"><span class="film item" onclick="getFilms(${character.id})">${character.title}</a></li>`
     })
-    film.innerHTML = filmsHtml.join('')
+    filmDisplay.innerHTML = filmHtml.join('')
 }
 
 button.addEventListener('click', function() {
     console.log('clicked');
      // console.log(sold.innerText.split(' ')[2]);
      let ticket = sold.innerText.split(' ')[2] -1 
+     if(ticket === -1){
+        return "sold out"
+     }
      
      sold.innerText ="available tickets "+ ticket
      
      
  });
+
+
+
+
 
  
