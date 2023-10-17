@@ -9,7 +9,6 @@ const capacity = document.getElementById('capacity')
 const show = document.getElementById('showtime')
 const sold = document.getElementById('available-ticket')
 const availableTickets = capacity - sold  
-
 // Get data and render our films to the DOM
 let getFilms = (id = 1) => {
     fetch(`${url}/${id}`)
@@ -51,3 +50,5 @@ button.addEventListener('click', function() {
      
      
  });
+
+ 
