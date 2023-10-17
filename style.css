@@ -23,7 +23,7 @@ body{
 
 img{
     height: 450px;
-    width: 700px;
+    width: 630px;
     
     
 }
@@ -63,10 +63,42 @@ img{
     color: white;
 }
 
-film-container{
-    text-align: center;
-    justify-content: center;
-    margin-right: 30px;
-    background-color: aliceblue;
+
+
+.film-card{
+    justify-items: center;
+    margin: auto;
+    width: 50%;
+    border: 5px solid;
+
 }
 
+.film-card img{
+    max-width: 100%;
+    height: auto;
+}
+
+.film-card h2{
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.film-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.Buy-Ticket {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.Buy-Ticket:hover {
+    background-color: #d4421f;
+}
